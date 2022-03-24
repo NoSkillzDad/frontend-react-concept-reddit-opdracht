@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --rood: #dd3038;
+    --oranje: #e7613a;
+    --licht_oranje: #FDF4F2;
+    --zwart: #292929;
+    --wit: #FFFFFF;
+}
+
