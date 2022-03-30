@@ -1,0 +1,17 @@
+.sub-details * {
+    padding: 10px 0 10px 0;
+}
+
+.sub-details {
+    margin-bottom: 30px;
+}
+
+.sub-details p {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.sub-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
