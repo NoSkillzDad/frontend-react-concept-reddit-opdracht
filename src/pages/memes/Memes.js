@@ -19,10 +19,10 @@ const Memes = () => {
             let response;
             if (page > 25) {
                 // console.log("page 1");
-                response = await axios.get(`https://www.reddit.com/r/memes/new.json?limit=${page}`);
+                response = await axios.get(`https://www.reddit.com/r/memes/hot.json?limit=${page}`);
             } else {
                 // console.log(`page ${page} after ${after}`);
-                response = await axios.get(`https://www.reddit.com/r/memes/new.json?limit=15?after=${after}?count=${page}`);
+                response = await axios.get(`https://www.reddit.com/r/memes/hot.json?limit=15?after=${after}?count=${page}`);
             }
             setMemes(response.data.data.children);
             setAfter(response.data.data.after);
@@ -77,7 +77,7 @@ const Memes = () => {
                     <div className={"content-wrapper"}>
                         <div className={"section"}>
                             <div className={"section-title"}>
-                                <h2>Newest Memes</h2>
+                                <h2>Hottest Memes</h2>
                                 <h5>on r/Memes right now</h5>
                             </div>
                             <div className={"section-content"}>
