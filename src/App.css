@@ -43,6 +43,7 @@ body {
     flex-basis: 920px;
     flex-shrink: 1;
     flex-grow: 0;
+    margin-right: 15px;
 }
 
 .title-wrapper {
