@@ -1,0 +1,24 @@
+.memes {
+    width: 720px;
+    /*padding: 40px;*/
+}
+
+.single-meme {
+    background-color: var(--wit);
+    padding: 70px 100px 70px 100px;
+    margin-top: 20px;
+}
+
+.single-meme img {
+    /*margin: 50px;*/
+    width: 520px;
+}
+
+.infinite-scroll- {
+    all: initial;
+    all: unset;
+}
+
+.error {
+    color: var(--rood);
+}

@@ -6,7 +6,7 @@
 2. [Opdracht 1: Opzet](#opdracht-1-opzet)
 3. [Opdracht 2: Routing](#opdracht-2-routing)
 4. [Opdracht 3: Homepagina (data ophalen en weergeven)](#opdracht-3-homepagina-data-ophalen-en-weergeven)
-5. [Opdracht 4: Subreddit pagina (data ophalen en weergeven)](#opdracht-4-subreddit-pagina-data-ophalen-en-weergeven)
+5. [Opdracht 4: Sub pagina (data ophalen en weergeven)](#opdracht-4-subreddit-pagina-data-ophalen-en-weergeven)
 7. [Opdracht 5: Styling](#opdracht-5-styling);
 8. [Bonusopdracht](#bonusopdracht)
 9. [Schermontwerpen](#schermontwerpen)
@@ -64,16 +64,16 @@ rommeltje. Zorg daarom dat je onderstaande checklist afwerkt.
 ## Opdracht 2: routing
 De Reddit applicatie heeft op dit moment nog geen pagina's en ook geen routing. Dit ga jij zelf implementeren. Maak twee pagina-componenten aan en zorg ervoor dat deze pagina's te bereiken zijn op de volgende urls:
 1. Home pagina (`/`)
-2. Subreddit specifieke pagina (`/subreddit/:subredditId`, dynamische url)
+2. Sub specifieke pagina (`/subreddit/:subredditId`, dynamische url)
 
-Zorg dat je test of jouw dynamische routing werkt, door op de Subreddit specifieke pagina de `subredditId` uit te lezen en weer te geven op de pagina. Dit kun je vervolgens testen door handmatig urls in de adresbalk te typen, zoals: `http://localhost:3000/subreddit/todayilearned`.
+Zorg dat je test of jouw dynamische routing werkt, door op de Sub specifieke pagina de `subredditId` uit te lezen en weer te geven op de pagina. Dit kun je vervolgens testen door handmatig urls in de adresbalk te typen, zoals: `http://localhost:3000/subreddit/todayilearned`.
 
 ## Opdracht 3: Homepagina (data ophalen en weergeven)
 * Je haalt 15 posts op en laat deze zien op de homepagina door een request te maken naar dit endpoint: `GET https://www.reddit.com/hot.json?limit=15`. Kijk goed naar de data die je ontvangt en zorg dat je de individuele informatie eerst in de console kunt loggen voor je dit probeert weer te geven op de pagina!
 * Door op de naam van de subreddit te klikken, wordt de gebruiker doorgelinkt naar de subreddit-specificatie-pagina;
 * Door op de titel van de post te klikken, wordt de gebruiker doorgelinkt naar de _echte_ post op Reddit.com;
 
-## Opdracht 4: Subreddit pagina (data ophalen en weergeven)
+## Opdracht 4: Sub pagina (data ophalen en weergeven)
 * Je haalt de informatie over een specifieke subreddit op door een request te maken naar dit endpoint: `GET https://www.reddit.com/r/{SUBREDDIT-HIER}/about.json`,  waarbij je `{SUBREDDIT-HIER]` vervangt door bijvoorbeeld `memes` of `worldnews`.
 * Zorg dat de gebruiker terug kan naar de homepagina door op de "Take me back"-link onderaan de pagina te klikken.
 
@@ -121,6 +121,8 @@ src
 |       ├── Home.js
 |       └── Home.css
 |   └── subreddit
-|       ├── Subreddit.js
-|       └── Subreddit.css
+|       ├── Sub.js
+|       └── Sub.css
 ```
+
+[GitHub Repo link](git@github.com:hogeschoolnovi/frontend-react-concept-opdracht.git)

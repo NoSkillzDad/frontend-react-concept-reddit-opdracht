@@ -1,0 +1,26 @@
+.button-wrapper {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    color: var(--rood);
+    border: none;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: underline;
+    font-size: 0.85em;
+}
+
+.button-wrapper p {
+    margin-left: 5px;
+}
+
+.back-arrow {
+    width: 7px;
+    fill: var(--rood);
+}
+
+.button-wrapper:hover {
+    cursor: pointer;
+}
+
